@@ -11,6 +11,9 @@ main { width: min(1080px, calc(100% - 2rem)); margin: 0 auto; padding: 3rem 0; }
 header { padding: 2rem; color: #f9fff7; background: #244b36; border-radius: 1.5rem; }
 h1 { margin: 0.35rem 0; font-size: clamp(2rem, 6vw, 4rem); }
 .eyebrow { margin: 0; color: #b7e27d; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.status-badge { display: inline-flex; margin-top: 1rem; padding: .35rem .6rem; border-radius: 999px; font-size: .78rem; font-weight: 800; }
+.status-badge--steady { color: #173326; background: #b7e27d; }
+.status-badge--attention { color: #4b2e00; background: #ffd38a; }
 .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1rem; }
 .summary article { display: flex; flex-direction: column; padding: 1.25rem; background: #fff; border: 1px solid #d9dfd4; border-radius: 1rem; }
 .summary strong { font-size: 2rem; }

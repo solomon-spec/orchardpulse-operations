@@ -1,4 +1,5 @@
 import { ColdRoomPriorityBoard } from './features/ColdRoomPriorityBoard'
+import { StatusBadge } from './components/StatusBadge'
 import { CrewShiftBoard } from './features/CrewShiftBoard'
 import { DispatchLoadSequence } from './features/DispatchLoadSequence'
 import { EquipmentInspectionQueue } from './features/EquipmentInspectionQueue'
@@ -20,6 +21,7 @@ export function App() {
     <main>
       <header>
         <p className="eyebrow">OrchardPulse</p>
+        <StatusBadge label="All systems operating" />
         <h1>Harvest operations</h1>
         <p>Coordinate crews, quality checks, and cold-storage moves.</p>
       </header>
