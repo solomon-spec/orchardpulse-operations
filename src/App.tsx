@@ -1,5 +1,6 @@
 import { ColdRoomPriorityBoard } from './features/ColdRoomPriorityBoard'
 import { StatusBadge } from './components/StatusBadge'
+import { WorkflowIndex } from './components/WorkflowIndex'
 import { CrewShiftBoard } from './features/CrewShiftBoard'
 import { DispatchLoadSequence } from './features/DispatchLoadSequence'
 import { EquipmentInspectionQueue } from './features/EquipmentInspectionQueue'
@@ -33,6 +34,7 @@ export function App() {
           </article>
         ))}
       </section>
+      <WorkflowIndex />
       <div className="workflow-grid">
         <HarvestBlockQueue />
         <ColdRoomPriorityBoard />

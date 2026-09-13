@@ -17,6 +17,9 @@ h1 { margin: 0.35rem 0; font-size: clamp(2rem, 6vw, 4rem); }
 .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1rem; }
 .summary article { display: flex; flex-direction: column; padding: 1.25rem; background: #fff; border: 1px solid #d9dfd4; border-radius: 1rem; }
 .summary strong { font-size: 2rem; }
+.workflow-index { display: flex; gap: .5rem; margin: 1rem 0; padding: .75rem; overflow-x: auto; background: #e6ebdf; border-radius: .85rem; }
+.workflow-index a { flex: 0 0 auto; padding: .45rem .65rem; color: #244b36; background: #fff; border-radius: .5rem; font-size: .82rem; font-weight: 750; text-decoration: none; }
+.workflow-index a:hover, .workflow-index a:focus-visible { outline: 2px solid #356342; outline-offset: 2px; }
 .workflow-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; margin-top: 1rem; }
 .workflow { padding: 1.25rem; background: #fff; border: 1px solid #d9dfd4; border-radius: 1rem; }
 .workflow-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
