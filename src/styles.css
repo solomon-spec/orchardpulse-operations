@@ -14,3 +14,17 @@ h1 { margin: 0.35rem 0; font-size: clamp(2rem, 6vw, 4rem); }
 .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1rem; }
 .summary article { display: flex; flex-direction: column; padding: 1.25rem; background: #fff; border: 1px solid #d9dfd4; border-radius: 1rem; }
 .summary strong { font-size: 2rem; }
+.workflow-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.workflow { padding: 1.25rem; background: #fff; border: 1px solid #d9dfd4; border-radius: 1rem; }
+.workflow-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.workflow h2 { margin: .2rem 0 1rem; font-size: 1.2rem; }
+.kicker { margin: 0; color: #5b6f62; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.workflow button { min-height: 2.5rem; padding: .55rem .75rem; color: #fff; background: #356342; border: 0; border-radius: .65rem; font-weight: 700; cursor: pointer; }
+.workflow ol, .workflow ul { display: grid; gap: .6rem; margin: 0; padding: 0; list-style-position: inside; }
+.workflow li, .workflow article { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.5rem; padding: .75rem; background: #f8faf6; border: 1px solid #e0e7dc; border-radius: .7rem; }
+.workflow li div, .workflow article { flex: 1; }
+.workflow li div { display: flex; flex-direction: column; }
+.workflow li span, .workflow article span { color: #5b6f62; font-size: .86rem; }
+.workflow input, .workflow select { max-width: 9.5rem; min-height: 2.25rem; padding: .35rem .5rem; border: 1px solid #aebcae; border-radius: .45rem; }
+.workflow label { display: flex; align-items: center; gap: .35rem; font-size: .82rem; }
+.card-grid { display: grid; gap: .6rem; }

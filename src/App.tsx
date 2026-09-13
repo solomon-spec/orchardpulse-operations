@@ -1,3 +1,14 @@
+import { ColdRoomPriorityBoard } from './features/ColdRoomPriorityBoard'
+import { CrewShiftBoard } from './features/CrewShiftBoard'
+import { DispatchLoadSequence } from './features/DispatchLoadSequence'
+import { EquipmentInspectionQueue } from './features/EquipmentInspectionQueue'
+import { GrowerDeliveryBoard } from './features/GrowerDeliveryBoard'
+import { HarvestBlockQueue } from './features/HarvestBlockQueue'
+import { IrrigationRunPlan } from './features/IrrigationRunPlan'
+import { OrchardAlertFeed } from './features/OrchardAlertFeed'
+import { PackingLineSchedule } from './features/PackingLineSchedule'
+import { QualitySampleQueue } from './features/QualitySampleQueue'
+
 const summary = [
   { label: 'Blocks ready', value: '12' },
   { label: 'Bins cooling', value: '184' },
@@ -20,6 +31,18 @@ export function App() {
           </article>
         ))}
       </section>
+      <div className="workflow-grid">
+        <HarvestBlockQueue />
+        <ColdRoomPriorityBoard />
+        <QualitySampleQueue />
+        <CrewShiftBoard />
+        <DispatchLoadSequence />
+        <IrrigationRunPlan />
+        <PackingLineSchedule />
+        <OrchardAlertFeed />
+        <EquipmentInspectionQueue />
+        <GrowerDeliveryBoard />
+      </div>
     </main>
   )
 }
