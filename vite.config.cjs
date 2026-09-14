@@ -5,6 +5,10 @@ module.exports = {
   // A CommonJS config loads without Vite creating a temporary module beside
   // this file, and the shared cache also lives outside the checkout.
   cacheDir: '/tmp/orchardpulse-operations-vite-cache',
+  build: {
+    outDir: '/tmp/orchardpulse-operations-dist',
+    emptyOutDir: true,
+  },
   plugins: [react.default()],
   test: {
     environment: 'jsdom',
